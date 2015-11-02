@@ -59,3 +59,7 @@ ExternalProject_Add_Step(iris_project forceconfigure
  		DEPENDEES update
  		DEPENDERS configure
  		ALWAYS 1)
+
+# add an empty install target
+# this is a no-op because the sub-projects install at build time.
+install(FILES)
